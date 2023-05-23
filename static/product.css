@@ -1,0 +1,20 @@
+.products {
+            width: 80%;
+            margin-left: 10%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+.product_block {
+             width: 80%;
+            margin-left: 10%;
+            margin-top: 20%;
+        }
+
+        .product_block > img {
+            width: 100%;
+        }
+        .dates {
+            display: flex;
+            justify-content: space-between;
+        }
