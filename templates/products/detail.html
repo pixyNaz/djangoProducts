@@ -21,7 +21,7 @@
         {% if product.image %}
             <img src="/media/{{ product.image }}" alt=""/>
         {% else %}
-            <img src="{% static 'apple.jpeg' %}" alt=""/>
+            <img src="{% static '' %}" alt=""/>
         {% endif %}
         <h1>{{ product.title }} <br> Rate: {{ product.rate }}</h1>
         <h5>{{ product.description }}</h5>

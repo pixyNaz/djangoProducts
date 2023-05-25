@@ -18,3 +18,9 @@
             display: flex;
             justify-content: space-between;
         }
+.comment_block {
+            padding: 10px;
+            color: #ffffff;
+            background: #242b2e;
+            margin-top: 20px;
+        }
