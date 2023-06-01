@@ -6,3 +6,5 @@ class ProductCreateForm(forms.Form):
     title = forms.CharField(max_length=256)
     description = forms.CharField(widget=forms.Textarea())
     rate = forms.FloatField()
+
+
