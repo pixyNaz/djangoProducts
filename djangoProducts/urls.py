@@ -19,7 +19,7 @@ from django.urls import path
 from django.conf.urls.static import static
 
 
-from products.views import main_page_view, products_view, product_detail_view, product_create_view
+from products.views import MainPageCBV, ProductsCBV, ProductDetailCBV, product_create_view
 from djangoProducts import settings
 from users.views import auth_view, register_view, logout_view
 
@@ -27,10 +27,10 @@ from users.views import auth_view, register_view, logout_view
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', main_page_view),
-    path('products/', products_view),
+    path('', MainPageCBV.as_view()),
+    path('products/', ProductsCBV.as_view()),
     path('products/create/', product_create_view),
-    path('products/<int:id>/', product_detail_view),
+    path('products/<int:id>/', ProductDetailCBV.as_view()),
     path('users/auth/', auth_view),
     path('users/register/', register_view),
     path('users/logout/', logout_view)
